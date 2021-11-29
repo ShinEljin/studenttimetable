@@ -33,7 +33,7 @@ body {
 
       a {
         font-weight: 600;
-        font-size: 1.1rem;
+        font-size: 1rem;
         display: flex;
         align-items: center;
         text-decoration: none;
@@ -69,7 +69,7 @@ body {
         color: white;
         background-color: #253346;
         border: 1px solid transparent;
-        border-radius: 10px;
+        border-radius: 0.625rem;
         height: 3rem;
         font-weight: bolder;
         font-size: 2rem;
@@ -88,9 +88,9 @@ body {
 
     .menu-title {
       background-color: #c7ebf3;
-      margin: 2rem;
-      padding: 0.7rem 2rem;
-      border-radius: 0.7rem;
+      margin: 2em;
+      padding: 0.7em 2em;
+      border-radius: 0.7em;
 
       h3 {
         color: #9fbdc3;
@@ -105,4 +105,58 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+
+    .navbar {
+      flex: 0.1;
+      padding: 0;
+      margin: 0;
+
+      .title {
+        display: none;
+      }
+
+      .menus {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-left: 0;
+          margin: 1em 0.1em;
+          width: 15%;
+
+          i {
+            margin-right: 0;
+          }
+
+          span {
+            display: none;
+          }
+        }
+      }
+
+      .back {
+        display: none;
+      }
+    }
+
+    .content {
+      flex: 0.9;
+    }
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  body {
+    font-size: 8px;
+  }
 }

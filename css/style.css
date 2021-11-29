@@ -49,7 +49,7 @@ body {
 
 .container .navbar .menus a {
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,7 +93,7 @@ body {
   color: white;
   background-color: #253346;
   border: 1px solid transparent;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   height: 3rem;
   font-weight: bolder;
   font-size: 2rem;
@@ -113,9 +113,9 @@ body {
 
 .container .content .menu-title {
   background-color: #c7ebf3;
-  margin: 2rem;
-  padding: 0.7rem 2rem;
-  border-radius: 0.7rem;
+  margin: 2em;
+  padding: 0.7em 2em;
+  border-radius: 0.7em;
 }
 
 .container .content .menu-title h3 {
@@ -125,5 +125,73 @@ body {
 
 .container .content .menu-title h3 span {
   color: #22b3d3;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container .navbar {
+    -webkit-box-flex: 0.1;
+        -ms-flex: 0.1;
+            flex: 0.1;
+    padding: 0;
+    margin: 0;
+  }
+  .container .navbar .title {
+    display: none;
+  }
+  .container .navbar .menus {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .navbar .menus a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 0;
+    margin: 1em 0.1em;
+    width: 15%;
+  }
+  .container .navbar .menus a i {
+    margin-right: 0;
+  }
+  .container .navbar .menus a span {
+    display: none;
+  }
+  .container .navbar .back {
+    display: none;
+  }
+  .container .content {
+    -webkit-box-flex: 0.9;
+        -ms-flex: 0.9;
+            flex: 0.9;
+  }
+}
+
+@media only screen and (max-width: 250px) {
+  body {
+    font-size: 8px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
